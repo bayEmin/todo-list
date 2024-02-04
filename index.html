@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+    <div id = snackbar class="snackbar">
+        <a href="#" id="closeToastMessage" onclick="closeToastMessage()">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </a>
+        <p id="toastMessage"></p> 
+    </div>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>ToDo App</h1>
+                            <h1 id="editMode" class="edit-mode">Task Edit Mode</h1>
+                            <h1 id="current">Time</h1>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="input-group">
+                                    <div class="input-container">
+                                        <label for="taskTitle">Task Title :</label>
+                                        <input type="text" id="taskTitle" class="form-control">
+                                    </div>
+
+                                    <div class="input-container">
+                                        <label for="dateInput">Due Date : </label>
+                                        <input type="date" data-date-format="DD.MM.YYYY" class="form-check" id="dateInput">
+                                    </div>
+                                
+                                    <div class="input-container">
+                                        <label for="description">Description : </label>
+                                        <textarea name="description" id="description" rows="3"></textarea>
+                                    </div>
+                                    <div class="button-container">
+                                        <button type="submit" class="btn btn-primary btn-sm" id="btnAddNewTask">Add</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="btnCancel">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <div class="filter">
+                                <button id="btnAllTasks" class="btn btn-primary btn-sm btn-success">All</button>
+                                <button id="btnCompletedTasks" class="btn btn-primary btn-sm">Completed</button>
+                                <button id="btnPendingTasks" class="btn btn-primary btn-sm">Pending</button>
+                            </div>
+                            <button id="btnClear" class="btn btn-danger btn-sm">Clear</button>
+                        </div>
+                        <ul id="task-list" class="list-group list-group-flush">
+                            <!-- Dinamik olarak ekleniyor. -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
