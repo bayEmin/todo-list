@@ -32,3 +32,5 @@ Clearing All Tasks:
 
 - Click the "Clear" button to clear all tasks.
 ![todo-list_app](https://github.com/bayEmin/todo-list/assets/158794946/f0cda758-3fb3-44e8-9e55-aa61ab95f7ad)
+![todo-list_app-toast-message-1](https://github.com/bayEmin/todo-list/assets/158794946/9feecec2-766a-4db5-9a38-17d79236bc52)
+![todo-list_app-toast-message-2](https://github.com/bayEmin/todo-list/assets/158794946/c9933e29-8c72-4d15-80e4-08baf004ecee)
