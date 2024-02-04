@@ -31,3 +31,4 @@ Filtering Tasks:
 Clearing All Tasks:
 
 - Click the "Clear" button to clear all tasks.
+![todo-list_app](https://github.com/bayEmin/todo-list/assets/158794946/f0cda758-3fb3-44e8-9e55-aa61ab95f7ad)
